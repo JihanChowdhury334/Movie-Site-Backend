@@ -9,7 +9,8 @@ const uri = `mongodb+srv://${mongo_username}:${mongo_password}@cluster0.wqpboub.
 
 
 
-const port = 8000
+const port = process.env.PORT || 8000
+
 
 MongoClient.connect(
   uri,
